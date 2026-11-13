@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#120d19" name="theme-color" />
+    <title>Club management | PNC Music Club</title>
+    <link href="assets/img/logo.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="assets/css/admin.css" rel="stylesheet" />
+    <link href="assets/css/admin-v5.css" rel="stylesheet" />
+    <meta content="noindex,nofollow,noarchive" name="robots" />
+    <link href="assets/css/admin-v7.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/admin-v8.css" />
+    <link rel="stylesheet" href="assets/css/admin-v13.css" />
+    <link rel="stylesheet" href="assets/css/admin-v11.css" />
+    <link rel="stylesheet" href="assets/css/admin-v12.css" />
+    <link rel="stylesheet" href="assets/css/admin-v14.css" />
+    <link rel="stylesheet" href="assets/css/admin-v15.css" />
+    <link rel="stylesheet" href="assets/css/admin-v20.css" />
+    <link rel="stylesheet" href="assets/css/admin-v21.css" />
+    <link rel="stylesheet" href="assets/css/admin-v22.css" />
+</head>
+
+<body class="admin-page admin-hacker">
+    <div aria-hidden="true" class="studio-backdrop">
+        <div class="studio-grid"></div>
+        <div class="hacker-noise"></div>
+        <div class="hacker-pulse"></div>
+        <div class="hacker-rain" id="hackerRain"></div>
+        <div class="studio-halo halo-a"></div>
+        <div class="studio-halo halo-b"></div>
+        <div class="studio-halo halo-c"></div>
+        <div class="studio-rings"></div>
+        <div class="studio-sparks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+    </div>
+    <header class="admin-header">
+        <a class="admin-brand" href="index.html"><img alt="PNC Music Club logo" src="assets/img/logo.png" /><span><b>PNC MUSIC
+                    CLUB</b><small>THE CREATIVE STUDIO</small></span></a>
+        <div class="admin-header-tag"><span class="admin-header-dot"></span><span>SECURE / ONLINE</span></div><a
+            class="admin-back" href="pages/about.html">← Back to the club site</a>
+    </header>
+    <main class="admin-main">
+        <section aria-live="polite" class="auth-card" id="authCard">
+            <div class="auth-content">
+                <div class="auth-topline"><span class="auth-chip">ADMIN LOGIN</span><span class="auth-chip ghost">PNC • SECURE</span></div>
+                <div class="admin-mark"><img src="assets/img/logo.png" alt="PNC Music Club logo" /></div>
+                <span class="admin-kicker">LEADER WORKSPACE</span>
+                <h1 id="authTitle">Leader access portal.</h1>
+                <p id="authDescription">Sign in to manage club messages, team profiles, photos, and website content in a secure creative studio.</p>
+                <form class="admin-form" hidden="" id="loginForm">
+                    <label>Email address<input autocomplete="username" id="loginEmail" placeholder="leader@example.com"
+                            required="" type="email" /></label>
+                    <label>Password<input autocomplete="current-password" id="loginPassword"
+                            placeholder="Your admin password" required="" type="password" /></label>
+                    <button class="admin-primary" type="submit">Sign in <span>→</span></button>
+                </form>
+                <form class="admin-form" hidden="" id="setupForm">
+                    <div class="setup-notice"><b>First time here?</b><span>Copy the one-time setup code printed in the
+                            terminal where the site server is running.</span></div>
+                    <label>One-time setup code<input autocomplete="one-time-code" id="setupCode"
+                            placeholder="Paste the terminal code" required="" /></label>
+                    <label>Admin email<input autocomplete="email" id="setupEmail" placeholder="leader@example.com"
+                            required="" type="email" /></label>
+                    <label>Create a password<input autocomplete="new-password" id="setupPassword" minlength="12"
+                            placeholder="At least 12 characters" required="" type="password" /></label>
+                    <button class="admin-primary" type="submit">Create secure admin account <span>→</span></button>
+                </form>
+                <p class="admin-alert" id="authAlert" role="alert"></p>
+                <div class="auth-foot"><span class="secure-dot"></span> Messages and profiles are stored in the club
+                    database.</div>
+            </div>
+            <aside aria-hidden="true" class="auth-showcase hacker-showcase v15-showcase" id="v15Showcase">
+                <div class="v15-showcase-grid"></div>
+                <div class="v15-showcase-beam"></div>
+                <div class="v15-panel-top"><span class="v15-status"><i></i> PNC MUSIC SYSTEM</span><span>STUDIO // 2027</span></div>
+                <div class="v15-art" id="v15Art">
+                    <div class="v15-halo v15-halo-outer"></div>
+                    <div class="v15-halo v15-halo-inner"></div>
+                    <div class="v15-orbit orbit-one"><i></i></div>
+                    <div class="v15-orbit orbit-two"><i></i></div>
+                    <div class="v15-record"><div class="v15-record-ridge"></div><div class="v15-record-center"><img src="assets/img/logo.png" alt="" /></div></div>
+                    <div class="v15-arc-label">FEEL THE BEAT · LIVE THE MUSIC</div>
+                    <div class="v15-float-tag tag-top">♫ <span>CREATE</span></div>
+                    <div class="v15-float-tag tag-bottom"><span>CONNECT</span> ✦</div>
+                </div>
+                <div class="v15-panel-content">
+                    <span class="v15-overline"><i></i> YOUR CLUB, ONE STUDIO</span>
+                    <h2>Behind every beat<br /><em>is a great team.</em></h2>
+                    <p>Manage the music, the moments, and the people who make them happen.</p>
+                    <div class="v15-equalizer" aria-hidden="true">
+                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                    </div>
+                    <div class="v15-panel-footer"><span><b>●</b> MUSIC IS OUR LANGUAGE</span><span>PNC // CLUB</span></div>
+                </div>
+            </aside>
+        </section>
+        <section class="admin-workspace" hidden="" id="workspace">
+            <div class="workspace-heading"><span class="studio-heading-line"></span>
+                <div><span class="admin-kicker">✦ PNC MUSIC CLUB / CONTROL ROOM</span>
+                    <h1>Your creative studio.</h1>
+                    <p>Every good performance starts behind the scenes. Keep the club looking its best.</p>
+                </div>
+                <div class="workspace-actions"><span class="db-status"><i></i> Database connected</span><button
+                        class="admin-logout" id="logoutButton" type="button">Sign out</button></div>
+                <div aria-hidden="true" class="workspace-visual">
+                    <div class="workspace-visual-vinyl"><span>♪</span></div>
+                    <div class="workspace-visual-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                    </div><span class="workspace-visual-caption">LIVE / BEHIND THE MUSIC</span>
+                </div>
+            </div>
+            <div class="admin-stats" id="adminStats"></div>
+            <nav aria-label="Management sections" class="admin-tabs">
+                <button class="admin-tab is-active" data-panel="inboxPanel" type="button"><span aria-hidden="true"
+                        class="v7-tab-icon">✉</span>Inbox <span id="unreadBadge">0</span></button>
+                <button class="admin-tab" data-panel="pageHubPanel" type="button"><span aria-hidden="true" class="v7-tab-icon">▦</span>All 7 pages</button>
+                <button class="admin-tab" data-panel="sitePanel" type="button"><span aria-hidden="true"
+                        class="v7-tab-icon">✦</span>Website editor</button><button class="admin-tab"
+                    data-panel="mediaPanel" type="button"><span aria-hidden="true" class="v7-tab-icon">▧</span>Banners
+                    &amp; photos</button><button class="admin-tab" data-panel="teamPanel" type="button"><span
+                        aria-hidden="true" class="v7-tab-icon">♬</span>Team profiles</button>
+            </nav>
+            <section class="admin-panel" id="inboxPanel">
+                <div class="inbox-toolbar">
+                    <div>
+                        <h2>Club inbox</h2>
+                        <p>Messages sent through the contact form or website chat.</p>
+                    </div>
+                    <div class="inbox-controls"><select aria-label="Filter messages" id="messageFilter">
+                            <option value="all">All messages</option>
+                            <option value="new">New</option>
+                            <option value="read">Read</option>
+                            <option value="replied">Replied</option>
+                            <option value="archived">Archived</option>
+                        </select><button class="admin-secondary" id="refreshMessages" type="button">↻ Refresh</button>
+                    </div>
+                </div>
+                <div class="inbox-layout">
+                    <aside aria-label="Messages" class="message-list" id="messageList"></aside>
+                    <article class="message-detail" id="messageDetail">
+                        <div class="empty-inbox"><span>✉</span><b>Choose a message</b>
+                            <p>New messages will appear here as soon as someone sends them.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="admin-panel pnc20-page-hub" hidden id="pageHubPanel">
+                <div class="inbox-toolbar">
+                    <div><span class="pnc20-eyebrow">PNC MUSIC CLUB / CONTENT CONTROL</span>
+                        <h2>Manage your 7 pages</h2>
+                        <p>Select a page, then update its text, photos, or five-second banner without touching the public page design.</p>
+                    </div>
+                    <a class="admin-secondary pnc20-preview-site" href="/index.html" target="_blank" rel="noopener noreferrer">↗ Open public website</a>
+                </div>
+                <div class="pnc20-steps" aria-label="Editing steps">
+                    <span><b>01</b> Choose page</span><span><b>02</b> Make changes</span><span><b>03</b> Publish &amp; preview</span>
+                </div>
+                <div class="pnc20-page-grid" id="pnc20PageGrid" aria-live="polite">
+                    <p class="v5-muted">Loading page controls…</p>
+                </div>
+                <div class="pnc20-footnote"><span aria-hidden="true">✦</span> Website layouts, original text, and the existing team photos are preserved until you choose to replace them. The Members editor is in <b>Team profiles</b>.</div>
+            </section>
+            <section class="admin-panel v5-panel" hidden="" id="sitePanel">
+                <div class="inbox-toolbar">
+                    <div>
+                        <h2>Website editor</h2>
+                        <p>Control site identity, text, social links, and animated backgrounds. Changes publish after
+                            you click Save website.</p>
+                    </div>
+                    <div class="inbox-controls"><a class="admin-secondary v5-link" href="/" rel="noopener"
+                            target="_blank">Preview website ↗</a><button class="admin-primary compact"
+                            id="cmsSaveWebsite" type="button">Save website</button></div>
+                </div>
+                <div class="pnc20-inline-switcher">
+                    <div class="pnc20-switcher-title"><strong>Edit content on</strong><small>Choose any of the seven pages</small></div>
+                    <div id="pnc20SitePageNav" class="pnc20-page-pills" aria-label="Choose website page"></div>
+                </div>
+                <div class="v5-columns">
+                    <article class="v5-card">
+                        <div class="v5-title"><span class="v5-symbol">01</span>
+                            <div>
+                                <h3>Club identity</h3>
+                                <p>Customize your website branding</p>
+                            </div>
+                        </div>
+                        <div class="v5-logo-row"><img alt="Current logo" id="cmsLogoPreview"
+                                src="assets/img/logo.png" />
+                            <div><button class="admin-secondary" id="cmsPickLogo" type="button">Upload new
+                                    logo</button><input accept="image/png,image/jpeg,image/webp" hidden=""
+                                    id="cmsLogoFile" type="file" /><small>PNG/JPG/WebP, up to 5 MB</small></div>
+                        </div>
+                        <label>Club website name<input id="cmsBrandTitle" maxlength="60"
+                                placeholder="PNC MUSIC CLUB" /></label>
+                        <label>Tagline<input id="cmsBrandTagline" maxlength="130"
+                                placeholder="Feel the Beat · Live the Music" /></label>
+                        <label>Top announcement<input id="cmsAnnouncement" maxlength="180" /></label>
+                    </article>
+                    <article class="v5-card">
+                        <div class="v5-title"><span class="v5-symbol">02</span>
+                            <div>
+                                <h3>Contact &amp; social links</h3>
+                                <p>Used in the footer, chat and Contact page</p>
+                            </div>
+                        </div>
+                        <label>Official club email<input id="cmsEmail" placeholder="musicclub@example.com"
+                                type="email" /></label>
+                        <label>Facebook URL<input id="cmsFacebook" placeholder="https://facebook.com/..."
+                                type="url" /></label>
+                        <label>Telegram URL<input id="cmsTelegram" placeholder="https://t.me/..." type="url" /></label>
+                        <label>Instagram URL<input id="cmsInstagram" placeholder="https://instagram.com/..."
+                                type="url" /></label>
+                    </article>
+                    <article class="v5-card">
+                        <div class="v5-title"><span class="v5-symbol">03</span>
+                            <div>
+                                <h3>Page headline</h3>
+                                <p>Update the introduction on any page</p>
+                            </div>
+                        </div>
+                        <label>Choose a page<select id="cmsPageSelect"></select></label>
+                        <label>Headline (use | to insert line breaks)<input id="cmsPageTitle" maxlength="180"
+                                placeholder="Leave blank to use the original" /></label>
+                        <label>Highlighted words<input id="cmsPageHighlight" maxlength="180"
+                                placeholder="Optional colored emphasis" /></label>
+                        <label>Introduction text<textarea id="cmsPageDescription" maxlength="900"
+                                placeholder="Leave blank for original description" rows="4"></textarea></label>
+                        <small class="v5-muted">Your changes appear on the selected page after publishing.</small>
+                    </article>
+                    <article class="v5-card">
+                        <div class="v5-title"><span class="v5-symbol">04</span>
+                            <div>
+                                <h3>Motion &amp; atmosphere</h3>
+                                <p>Make every page move to your rhythm</p>
+                            </div>
+                        </div>
+                        <label class="v5-switch"><input checked="" id="cmsMotionEnabled" type="checkbox" /><span>Enable
+                                animations across the website</span></label>
+                        <label>Animation style<select id="cmsMotionStyle">
+                                <option value="aurora">Aurora glow + floating music</option>
+                                <option value="stars">Starfield and music notes</option>
+                                <option value="minimal">Minimal soft gradient</option>
+                                <option value="nebula">Nebula waves + starlight</option>
+                            </select></label>
+                        <label>Effect intensity <output id="cmsMotionIntensityText">65%</output><input
+                                id="cmsMotionIntensity" max="100" min="0" step="5" type="range" value="65" /></label>
+                        <div class="v7-motion-controls"><label>Headline entrance<select id="cmsHeadlineMotion">
+                                    <option value="cinematic">Cinematic • slide &amp; reveal</option>
+                                    <option value="float">Floating • soft lift</option>
+                                    <option value="glow">Neon glow • light bloom</option>
+                                </select></label><label>Animation tempo<select id="cmsMotionTempo">
+                                    <option value="gentle">Dreamy • slow</option>
+                                    <option selected="" value="normal">Balanced • smooth</option>
+                                    <option value="energetic">Energetic • quick</option>
+                                </select></label></div>
+                        <div class="v5-ambient-preview">
+                            <div class="v7-preview-orb"></div>
+                            <div class="v7-preview-streak"></div>
+                            <div class="v7-preview-note">♪</div><span class="v7-preview-tag">LIVE MOTION
+                                PREVIEW</span><strong class="v7-preview-title" id="cmsMotionPreviewTitle">FEEL THE
+                                <em>BEAT.</em></strong><span class="v7-preview-footer"><span>✦ PNC MUSIC
+                                    CLUB</span><button class="v7-preview-replay" id="cmsReplayMotion" type="button">↻
+                                    Replay</button></span>
+                        </div>
+                        <p class="v7-motion-note">Preview changes instantly here. Click “Save website” to publish the
+                            effects to all pages.</p>
+                        <small class="v5-muted">Visitors who prefer reduced motion will see a still background.</small>
+                    </article>
+                </div>
+                <article class="v5-card v5-wide">
+                    <div class="v5-title"><span class="v5-symbol">05</span>
+                        <div>
+                            <h3>Edit sections and card text</h3>
+                            <p>Update headings and paragraphs on Home, About, News, Activities, Achievements, Gallery
+                                and Contact</p>
+                        </div>
+                    </div>
+                    <p class="v5-muted">Choose the page above to load its editable text. Blank fields keep the existing
+                        design and text.</p>
+                    <div class="pnc20-search-block"><label for="pnc20TextSearch">Find a text section</label><input type="search" id="pnc20TextSearch" placeholder="Search words from this page…" autocomplete="off" /><span id="pnc20TextCount" class="v5-muted"></span></div>
+                    <div class="v5-text-list" id="cmsTextEditor">
+                        <p>Choose a page to view editable sections.</p>
+                    </div>
+                </article>
+                <div class="v5-bottom-actions">
+                    <p aria-live="polite" id="cmsSiteStatus" role="status"></p><button class="admin-primary"
+                        id="cmsSaveWebsiteBottom" type="button">Publish website changes →</button>
+                </div>
+            </section>
+            <section class="admin-panel v5-panel" hidden="" id="mediaPanel">
+                <div class="inbox-toolbar">
+                    <div>
+                        <h2>Banners &amp; photo manager</h2>
+                        <p>Upload pictures and replace banners, cards and gallery images across all pages.</p>
+                    </div>
+                    <div class="inbox-controls"><button class="admin-primary compact" id="cmsSaveMedia"
+                            type="button">Publish image changes</button></div>
+                </div>
+                <div class="v5-media-top"><label>Page to customize<select id="cmsMediaPageSelect"></select></label><span
+                        class="v5-muted">Upload PNG, JPG or WebP. Images are saved privately through your admin
+                        account.</span></div>
+                <div class="pnc20-inline-switcher pnc20-media-switcher"><div class="pnc20-switcher-title"><strong>Edit photos and banners on</strong><small>Manage every page separately</small></div><div id="pnc20MediaPageNav" class="pnc20-page-pills" aria-label="Choose media page"></div></div>
+                <article class="pnc-v13-banner-repair" aria-labelledby="pncV13BannerTitle">
+                    <img src="assets/img/team-1.webp" alt="PNC Music Club team photo used for the default banner" loading="lazy" />
+                    <div class="pnc-v13-banner-repair-copy">
+                        <span class="pnc-v13-eyebrow">QUICK FIX · RESTORE ORIGINAL CLUB PHOTOS</span>
+                        <h3 id="pncV13BannerTitle">Seeing an old developer wallpaper?</h3>
+                        <p>Your saved background may override the team photos in the slideshow. Restore the club's five real team photos on all seven pages without deleting your members, messages or account.</p>
+                        <button class="admin-primary" type="button" id="cmsRestoreClubBanner">♬ Restore PNC Music Club Photos — all pages</button>
+                        <small>This clears saved background/banner overrides only. Uploaded files stay on disk; the admin account, team, messages, and other site content are preserved.</small>
+                        <p id="cmsRestoreClubStatus" aria-live="polite" role="status"></p>
+                        <a href="/index.html" target="_blank" rel="noopener" id="cmsV13ViewBanner">Preview the Home banner ↗</a>
+                    </div>
+                </article>
+                <article class="v5-card v5-wide pnc-bg-manager" id="cmsBackgroundCard">
+                    <div class="v5-title"><span class="v5-symbol">✦</span>
+                        <div>
+                            <h3>Background studio <span class="pnc-new-label">NEW</span></h3>
+                            <p>Choose one background for all pages or customize each page. Your top banner photos and 5-second slideshow stay unchanged. Supports image, GIF, and looping video backgrounds.</p>
+                        </div>
+                    </div>
+                    <div class="pnc-bg-editor-grid">
+                        <div class="pnc-bg-fields">
+                            <label>Apply this background to<select id="cmsBgTarget">
+                                    <option value="all">All 7 pages — same background</option>
+                                    <option value="selected">Selected page only</option>
+                                </select></label>
+                            <input type="hidden" id="cmsBgScope" value="page" />
+                            <div class="v15-background-note"><strong>Page background only</strong><span>Background changes never affect your banner slideshow. Use “Hero banner slideshow” below to edit banner photos separately.</span></div>
+                            <label>Focus of the background<select id="cmsBgPosition">
+                                    <option value="center">Center</option>
+                                    <option value="top">Top</option>
+                                    <option value="bottom">Bottom</option>
+                                </select></label>
+                            <label>Dark overlay <output id="cmsBgOverlayValue">55%</output><input id="cmsBgOverlay"
+                                    type="range" min="15" max="85" step="5" value="55" /></label>
+                            <div class="pnc-bg-help" id="cmsBgHelp"><b>All 7 pages:</b> publish a shared page background for Home, About, News, Activities, Achievements, Gallery and Contact. <strong>Banner slides are independent and will not change.</strong></div>
+                            <div class="pnc-bg-actions"><button class="admin-primary" id="cmsPickBg" type="button">＋
+                                    Upload image / GIF / video</button><button class="admin-secondary" id="cmsBgUseHome"
+                                    type="button">Copy existing Home background</button><button class="admin-secondary" id="cmsBgPublish" type="button">Publish background</button><button class="admin-secondary" id="cmsResetBg"
+                                    type="button">Restore background</button></div>
+                            <input accept="image/png,image/jpeg,image/webp,image/gif,video/mp4,video/webm" hidden
+                                id="cmsBgUpload" type="file" />
+                            <small>JPG / PNG / WebP up to 8 MB · GIF up to 15 MB · MP4 / WebM up to 40 MB. Video plays
+                                muted and loops; keep files short and optimized for fast loading.</small>
+                            <p role="status" aria-live="polite" id="cmsBgStatus"></p>
+                        </div>
+                        <div class="pnc-bg-preview-wrap">
+                            <div class="pnc-bg-preview" id="cmsBgPreview">
+                                <div class="pnc-bg-empty"><span>♫</span><b>Your background preview</b><small>Select a
+                                        file to start customizing.</small></div>
+                            </div>
+                            <div class="pnc-bg-preview-caption"><span>LIVE PREVIEW</span><span id="cmsBgCurrent">Using
+                                    the default background</span></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="v5-card v5-wide">
+                    <div class="v5-title"><span class="v5-symbol">01</span>
+                        <div>
+                            <h3>Hero banner slideshow</h3>
+                            <p>Change the background photos and their order. Slides move right to left every five
+                                seconds.</p>
+                        </div>
+                    </div>
+                    <div class="v5-media-toolbar"><button class="admin-secondary" id="cmsAddBanner" type="button">＋
+                            Upload a banner</button><button class="admin-secondary" id="pnc20CopyBanners" type="button">Copy this slideshow to all 7 pages</button><button class="admin-secondary" id="cmsResetBanners"
+                            type="button">Use default banners</button><input accept="image/png,image/jpeg,image/webp"
+                            hidden="" id="cmsBannerUpload" type="file" /><input accept="image/png,image/jpeg,image/webp" hidden id="pnc20BannerReplaceUpload" type="file" /></div>
+                    <div class="v5-banner-list" id="cmsBannerList"></div>
+                </article>
+                <article class="v5-card v5-wide">
+                    <div class="v5-title"><span class="v5-symbol">02</span>
+                        <div>
+                            <h3>Page pictures and cards</h3>
+                            <p>Change existing photos, including gallery moments and activity cards</p>
+                        </div>
+                    </div>
+                    <div class="pnc20-search-block"><label for="pnc20MediaSearch">Find a photo on this page</label><input type="search" id="pnc20MediaSearch" placeholder="Search by photo name…" autocomplete="off" /><span class="v5-muted" id="pnc20ImageCount"></span></div>
+                    <div class="v5-image-list" id="cmsImageList"></div>
+                    <input accept="image/png,image/jpeg,image/webp" hidden="" id="cmsGenericUpload" type="file" />
+                    <div class="v5-note">The member and leader portrait editor is in the <b>Team profiles</b> tab.</div>
+                </article>
+                <article class="v5-card v5-wide pnc21-gallery-manager" id="pnc21GalleryManager">
+                    <div class="pnc21-gallery-header">
+                        <div>
+                            <span class="pnc21-eyebrow">03 / GALLERY LIBRARY</span>
+                            <h3>More club memories</h3>
+                            <p>Add as many as 120 extra photographs to the Gallery without replacing the original nine. Pick multiple photos, edit captions, choose a category and publish.</p>
+                        </div>
+                        <div class="pnc21-gallery-tools">
+                            <button type="button" class="admin-secondary" id="pnc21AddGallery">＋ Add gallery photos</button>
+                            <button type="button" class="admin-primary compact" id="pnc21SaveGallery">Publish gallery</button>
+                        </div>
+                    </div>
+                    <input id="pnc21GalleryFiles" type="file" accept="image/png,image/jpeg,image/webp" multiple hidden />
+                    <div id="pnc21GalleryList" class="pnc21-gallery-list" aria-live="polite"></div>
+                    <p class="pnc21-help">PNG, JPG, WebP · Up to 24 MB per original photo (optimized before uploading) · 120 extra photos maximum. Changes are saved to the site database; original club photos are not removed.</p>
+                    <p id="pnc21GalleryStatus" role="status" aria-live="polite" class="pnc21-status"></p>
+                </article>
+                <div class="v5-bottom-actions">
+                    <p aria-live="polite" id="cmsMediaStatus" role="status"></p><button class="admin-primary"
+                        id="cmsSaveMediaBottom" type="button">Publish all photo changes →</button>
+                </div>
+            </section>
+            <section class="admin-panel team-panel" hidden="" id="teamPanel">
+                <div class="inbox-toolbar">
+                    <div>
+                        <h2>Team profiles</h2>
+                        <p>Update names, roles, instruments, introductions, and portraits for every generation.</p>
+                    </div>
+                    <div class="inbox-controls"><button class="admin-secondary" id="addGeneration" type="button">＋
+                            Generation</button><button class="admin-primary compact" id="saveTeam" type="button">Save
+                            team changes</button></div>
+                </div>
+                <div class="team-manager-top"><label>Generation<select id="generationSelect"></select></label><button
+                        class="admin-secondary" id="addPerson" type="button">＋ Add person</button><button
+                        class="admin-danger" id="deleteGeneration" type="button">Delete archive</button></div>
+                <div class="team-editor" id="teamEditor">
+                    <div class="empty-inbox"><span>♫</span><b>Loading team profiles</b></div>
+                </div>
+                <p class="editor-footnote">Profile updates are published to the About page immediately after saving. Add
+                    photos only with the person’s permission.</p>
+            </section>
+            <p class="admin-alert workspace-alert" id="workspaceAlert" role="status"></p>
+        </section>
+    </main>
+    <script defer="" src="assets/js/admin.js"></script>
+    <script defer src="assets/js/admin-v11.js"></script>
+    <script defer src="assets/js/admin-v15.js"></script>
+    <script defer="" src="assets/js/site-admin.js"></script>
+</body>
+
+</html>

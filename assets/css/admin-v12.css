@@ -1,0 +1,7 @@
+/* V12: shared background controls */
+#cmsBgTarget{border-color:rgba(123,255,224,.45);box-shadow:0 0 0 1px rgba(107,255,208,.1) inset}
+#cmsBgHelp{background:linear-gradient(140deg,rgba(9,28,36,.94),rgba(20,21,49,.87));border-color:rgba(106,245,207,.23)}
+#cmsBgUseHome{border-color:rgba(137,255,214,.28);color:#d4fff2}
+#cmsBgUseHome[hidden]{display:none!important}
+#cmsBackgroundCard{background:linear-gradient(135deg,rgba(26,35,60,.98),rgba(20,17,45,.97));border-color:rgba(155,226,255,.23)}
+#cmsBgStatus{font-weight:700;min-height:24px}

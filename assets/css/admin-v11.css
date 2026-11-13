@@ -1,0 +1,62 @@
+/* PNC Music Club V11 admin — cinematic hacker studio */
+.admin-hacker{position:relative;overflow-x:hidden;background:
+ radial-gradient(circle at 14% 12%,rgba(41,255,191,.12),transparent 26%),
+ radial-gradient(circle at 86% 12%,rgba(114,106,255,.12),transparent 28%),
+ radial-gradient(circle at 80% 82%,rgba(15,236,255,.08),transparent 26%),
+ linear-gradient(140deg,#03060a 0%,#061019 42%,#09051a 100%)}
+.admin-hacker .studio-backdrop{position:fixed;inset:0;z-index:-1;overflow:hidden}
+.admin-hacker .studio-backdrop::before,
+.admin-hacker .studio-backdrop::after{content:"";position:absolute;inset:0;pointer-events:none}
+.admin-hacker .studio-backdrop::before{background:repeating-linear-gradient(180deg,rgba(255,255,255,.025) 0 1px,transparent 1px 4px);mix-blend-mode:soft-light;opacity:.35;animation:v11-scanlines 7s linear infinite}
+.admin-hacker .studio-backdrop::after{background:radial-gradient(circle at 50% 50%,rgba(0,255,170,.12),transparent 46%);filter:blur(50px);opacity:.55;animation:v11-core-pulse 8s ease-in-out infinite}
+.studio-grid{background-image:linear-gradient(rgba(87,255,205,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(87,255,205,.08) 1px,transparent 1px);background-size:52px 52px;opacity:.42;mask-image:radial-gradient(circle at 50% 12%,#000 34%,transparent 78%)}
+.hacker-noise{opacity:.08}
+.hacker-pulse{background:radial-gradient(circle at 50% 40%,rgba(0,255,170,.16),transparent 34%);filter:blur(32px)}
+.hacker-rain{opacity:.75;mix-blend-mode:screen}
+.hacker-rain span{color:rgba(135,255,206,.65);font-size:12px;text-shadow:0 0 14px rgba(64,255,188,.34)}
+
+.v11-admin-glow{position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(71,255,199,.10),transparent 16%),radial-gradient(circle at calc(var(--mx,50%) + 8%) calc(var(--my,50%) - 5%),rgba(148,97,255,.10),transparent 18%)}
+.admin-main,.admin-header{position:relative;z-index:1}
+.admin-header{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:linear-gradient(180deg,rgba(3,9,14,.78),rgba(3,9,14,.42));border-bottom:1px solid rgba(111,255,221,.08)}
+.admin-header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(111,255,221,.65),transparent);opacity:.65}
+.auth-card{position:relative;isolation:isolate}
+.auth-card::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;padding:1px;background:linear-gradient(135deg,rgba(95,255,214,.38),rgba(255,255,255,.05),rgba(154,116,255,.25));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.95}
+.auth-content{position:relative}
+.auth-content::before{content:"SECURE TERMINAL • CLUB ACCESS • CONTENT CONTROL";position:absolute;left:0;right:0;top:-8px;font-size:10px;letter-spacing:.18em;color:rgba(140,255,224,.44)}
+.admin-mark{animation:v11-admin-float 5s ease-in-out infinite}
+.admin-mark::after{content:"";position:absolute;inset:-9px;border-radius:34px;border:1px solid rgba(99,255,214,.15);filter:blur(1px);animation:v11-admin-ring 3.6s ease-in-out infinite}
+#authTitle{position:relative;display:inline-block}
+#authTitle.v11-glitch::before,
+#authTitle.v11-glitch::after{content:attr(data-text);position:absolute;left:0;top:0;pointer-events:none;opacity:.42}
+#authTitle.v11-glitch::before{color:#67ffd9;transform:translate(1.5px,0);clip-path:inset(0 0 45% 0);animation:v11-glitch-a 2.6s linear infinite}
+#authTitle.v11-glitch::after{color:#b57cff;transform:translate(-1.5px,0);clip-path:inset(58% 0 0 0);animation:v11-glitch-b 3.2s linear infinite}
+.admin-form input{box-shadow:inset 0 0 0 1px rgba(255,255,255,.02),0 0 0 0 rgba(71,255,194,.12)}
+.admin-form input:focus{background:rgba(5,16,24,.95)}
+.admin-primary{position:relative;overflow:hidden}
+.admin-primary::after{content:"";position:absolute;inset:-2px auto -2px -36%;width:26%;transform:skewX(-18deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);opacity:0}
+.admin-primary:hover::after{opacity:1;animation:v11-admin-shine .95s ease}
+.auth-showcase{display:flex;flex-direction:column;justify-content:space-between}
+.hacker-terminal{margin-top:20px;border:1px solid rgba(112,255,220,.16);border-radius:18px;padding:14px 16px;background:linear-gradient(180deg,rgba(4,16,19,.62),rgba(7,11,26,.72));box-shadow:inset 0 0 0 1px rgba(255,255,255,.02)}
+.hacker-terminal-head{display:flex;justify-content:space-between;gap:8px;margin-bottom:12px;font-size:10px;letter-spacing:.15em;color:#bbfce9}
+.hacker-terminal-dots{display:flex;gap:6px}.hacker-terminal-dots i{width:8px;height:8px;border-radius:50%;background:#6bffcf;box-shadow:0 0 12px rgba(107,255,207,.3)}
+.hacker-terminal-lines{display:grid;gap:6px}.hacker-terminal-lines span{display:block;height:10px;border-radius:999px;background:linear-gradient(90deg,rgba(106,255,215,.48),rgba(106,255,215,.08));animation:v11-term-flicker 2.2s linear infinite}.hacker-terminal-lines span:nth-child(2){width:85%;animation-delay:-.5s}.hacker-terminal-lines span:nth-child(3){width:68%;animation-delay:-1s}.hacker-terminal-lines span:nth-child(4){width:92%;animation-delay:-1.4s}
+
+.workspace-heading,.admin-stats .stat-card,.admin-panel{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.workspace-heading{position:relative;overflow:hidden;border:1px solid rgba(108,255,217,.12);box-shadow:0 26px 60px rgba(0,0,0,.28)}
+.workspace-heading::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 18%,rgba(255,255,255,.04) 34%,transparent 48%,transparent 66%,rgba(95,255,211,.06) 82%,transparent)}
+.admin-tab{position:relative;overflow:hidden}
+.admin-tab::after{content:"";position:absolute;left:12px;right:12px;bottom:8px;height:2px;border-radius:999px;background:linear-gradient(90deg,#36eab6,#7b7dff,#bd89ff);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.admin-tab:hover::after,.admin-tab.is-active::after{transform:scaleX(1)}
+.admin-panel{border:1px solid rgba(108,255,217,.12);box-shadow:0 28px 54px rgba(0,0,0,.24)}
+.v5-card,.message-detail,.message-list,.message-card{border-color:rgba(108,255,217,.1)!important}
+
+@keyframes v11-scanlines{from{transform:translateY(0)}to{transform:translateY(4px)}}
+@keyframes v11-core-pulse{50%{transform:scale(1.08);opacity:.8}}
+@keyframes v11-admin-float{50%{transform:translateY(-8px)}}
+@keyframes v11-admin-ring{50%{transform:scale(1.08);opacity:.3}}
+@keyframes v11-glitch-a{0%,92%,100%{transform:translate(0,0)}93%{transform:translate(2px,-1px)}96%{transform:translate(-1px,1px)}}
+@keyframes v11-glitch-b{0%,88%,100%{transform:translate(0,0)}89%{transform:translate(-2px,1px)}94%{transform:translate(1px,-1px)}}
+@keyframes v11-admin-shine{from{left:-36%}to{left:118%}}
+@keyframes v11-term-flicker{0%,100%{opacity:.72}50%{opacity:1}}
+@media(max-width:980px){.v11-admin-glow{display:none}.auth-content::before{position:static;display:block;margin-bottom:12px}}
+@media(prefers-reduced-motion:reduce){.admin-hacker .studio-backdrop::before,.admin-hacker .studio-backdrop::after,.admin-mark,.admin-mark::after,#authTitle.v11-glitch::before,#authTitle.v11-glitch::after,.admin-primary::after,.hacker-terminal-lines span{animation:none!important}}

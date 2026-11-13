@@ -1,0 +1,12 @@
+/* V15: page wallpaper and banner slides are independent. */
+body.pnc-has-page-background .hero,
+body.pnc-has-page-background .inner-hero {
+  isolation: isolate;
+  background-color: #10152a;
+}
+body.pnc-has-page-background .hero-slides { visibility: visible; }
+body.pnc-has-page-background .hero .slide-controls,
+body.pnc-has-page-background .inner-hero .inner-banner-controls { visibility: visible; }
+/* Existing 5-second slideshow, its overlay, and controls remain above wallpaper. */
+body.pnc-has-page-background .hero .hero-shade,
+body.pnc-has-page-background .inner-hero .inner-banner-shade { pointer-events: none; }

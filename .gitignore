@@ -1,0 +1,9 @@
+.private-data/
+assets/uploads/
+node_modules/
+.env
+
+.private-data-backup/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

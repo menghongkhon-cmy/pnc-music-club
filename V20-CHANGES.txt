@@ -1,0 +1,9 @@
+V20 - Admin Content Manager (uploaded project preservation update)
+- New: All 7 pages admin hub: per-page text/photo/banner counts and direct editing/preview links.
+- New: Inline seven-page navigation for Website Editor and Photo Manager.
+- New: Search through editable text and page photos, reset individual text back to the original.
+- New: Replace a single banner photo, or explicitly copy a page's current banner list to all seven pages.
+- Safer: Separate publishing of website text vs media to avoid overwriting unsaved updates in unrelated sections.
+- Performance: Remove duplicate page-navigation/pointer-heavy effects from old V11 animation runtime.
+- Privacy: ZIP excludes private local SQLite DB and backup files, accounts, passwords, and uploads.
+- Original public HTML pages and imagery were not modified.

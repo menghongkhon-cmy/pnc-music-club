@@ -1,0 +1,16 @@
+GOOGLE SEARCH CONSOLE - HTML VERIFICATION
+
+This is NOT a verification token. Google gives each owner a unique HTML file.
+
+Steps:
+1. Open https://search.google.com/search-console
+2. Add property > URL prefix, and enter your PUBLIC HTTPS domain.
+3. Select HTML file and download Google's original file (such as google123abc.html).
+4. Put that UNCHANGED .html file here, in the same folder as index.html.
+5. Publish your website, then visit https://YOUR-DOMAIN/google123abc.html.
+6. Click Verify in Search Console. Do not delete the file later.
+
+For an easy SEO setup on Windows, run SETUP-SEO.bat and enter your real public HTTPS domain.
+Otherwise run: node configure-seo.mjs https://YOUR-DOMAIN.com
+
+See GOOGLE-SEARCH-CONSOLE-SETUP.md for complete instructions.

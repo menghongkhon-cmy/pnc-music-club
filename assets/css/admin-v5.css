@@ -1,0 +1,351 @@
+/* Site editor panels */
+.admin-tabs {
+    flex-wrap: wrap
+}
+
+.v5-panel {
+    animation: v5-arrive .3s ease-out
+}
+
+@keyframes v5-arrive {
+    from {
+        opacity: .4;
+        transform: translateY(8px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.v5-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center
+}
+
+.v5-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px
+}
+
+.v5-card {
+    padding: 27px;
+    background: linear-gradient(155deg, #21182b 0%, #17121e 100%);
+    border: 1px solid #ffffff1b;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px #0000001a
+}
+
+.v5-wide {
+    margin-top: 20px
+}
+
+.v5-title {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 22px
+}
+
+.v5-title h3 {
+    font-size: 21px;
+    letter-spacing: -.03em;
+    margin: 0 0 4px;
+    color: #fff
+}
+
+.v5-title p,
+.v5-muted {
+    margin: 0;
+    color: #b0a2c1;
+    font-size: 12px;
+    line-height: 1.65
+}
+
+.v5-symbol {
+    font-size: 11px;
+    font-weight: 900;
+    color: #ebd6ff;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #8056d6, #443174);
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    flex: none
+}
+
+.v5-card>label,
+.v5-media-top label {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 12px;
+    color: #d8cbe5;
+    font-weight: 700;
+    margin-top: 15px
+}
+
+.v5-card input:not([type="checkbox"]):not([type="range"]):not([type="file"]),
+.v5-card textarea,
+.v5-card select,
+.v5-media-top select {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 13px;
+    border: 1px solid #45334f;
+    border-radius: 12px;
+    background: #100d19;
+    color: #faf3ff;
+    font: inherit;
+    font-size: 13px;
+    outline: none;
+    resize: vertical
+}
+
+.v5-card input:focus,
+.v5-card textarea:focus,
+.v5-card select:focus,
+.v5-media-top select:focus {
+    border-color: #ac8aff;
+    box-shadow: 0 0 0 3px #9f6fff22
+}
+
+.v5-card input[type="range"] {
+    accent-color: #a67aff;
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer
+}
+
+.v5-logo-row {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid #ffffff13;
+    background: #120e1b;
+    border-radius: 14px
+}
+
+.v5-logo-row img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px #0006
+}
+
+.v5-logo-row>div {
+    display: grid;
+    justify-items: start;
+    gap: 10px
+}
+
+.v5-logo-row small {
+    color: #b3a4c4;
+    font-size: 11px
+}
+
+.v5-switch {
+    flex-direction: row !important;
+    align-items: center;
+    gap: 12px !important;
+    padding: 15px;
+    background: #100c18;
+    border-radius: 12px;
+    border: 1px solid #ffffff16
+}
+
+.v5-switch input {
+    accent-color: #aa80f4;
+    width: 18px;
+    height: 18px
+}
+
+.v5-ambient-preview {
+    position: relative;
+    min-height: 118px;
+    border-radius: 16px;
+    background: radial-gradient(circle at 18% 70%, #674cbea3, transparent 48%), radial-gradient(circle at 85% 20%, #c544a665, transparent 52%), #100d1b;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    color: #f6e9ff
+}
+
+.v5-ambient-preview b {
+    font-size: 20px
+}
+
+.v5-ambient-preview small {
+    color: #cfb2ee;
+    margin-top: 6px
+}
+
+.v5-text-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 14px
+}
+
+.v5-bottom-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0
+}
+
+.v5-bottom-actions p,
+#cmsSiteStatus,
+#cmsMediaStatus {
+    color: #bbf2d0;
+    font-size: 13px
+}
+
+.v5-bottom-actions button {
+    font-size: 13px;
+    min-height: 46px
+}
+
+.v5-media-top {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 20px
+}
+
+.v5-media-top label {
+    min-width: min(320px, 100%);
+    margin: 0
+}
+
+.v5-media-toolbar {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    margin-bottom: 18px
+}
+
+.v5-banner-list,
+.v5-image-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px
+}
+
+.v5-media-item {
+    padding: 12px;
+    border: 1px solid #ffffff1b;
+    background: #130e1c;
+    border-radius: 15px;
+    min-width: 0;
+    overflow: hidden
+}
+
+.v5-media-thumb {
+    height: 145px;
+    border-radius: 11px;
+    background: #3e2f54;
+    overflow: hidden
+}
+
+.v5-media-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.v5-media-item b {
+    display: block;
+    font-size: 12px;
+    margin: 13px 2px 10px;
+    color: #f7eafa;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.v5-media-actions {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.v5-mini-btn {
+    border: 1px solid #ffffff2a;
+    border-radius: 8px;
+    background: #ffffff09;
+    color: #e4d8f3;
+    padding: 7px 9px;
+    font-size: 11px;
+    font-weight: 800
+}
+
+.v5-mini-btn:hover {
+    background: #9466ed33;
+    border-color: #ae86ff
+}
+
+.v5-mini-btn.warn {
+    color: #ffa8ba
+}
+
+.v5-note {
+    margin-top: 18px;
+    padding: 13px 16px;
+    color: #bcb0c8;
+    border-radius: 12px;
+    background: #946bdb13;
+    font-size: 12px
+}
+
+@media(max-width:880px) {
+    .v5-columns {
+        grid-template-columns: 1fr
+    }
+
+    .v5-banner-list,
+    .v5-image-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media(max-width:560px) {
+    .v5-card {
+        padding: 16px
+    }
+
+    .v5-banner-list,
+    .v5-image-list,
+    .v5-text-list {
+        grid-template-columns: 1fr
+    }
+
+    .v5-media-top,
+    .v5-bottom-actions {
+        align-items: stretch;
+        flex-direction: column
+    }
+
+    .v5-media-thumb {
+        height: 185px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    .v5-panel {
+        animation: none
+    }
+}

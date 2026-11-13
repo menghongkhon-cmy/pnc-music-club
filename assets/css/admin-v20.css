@@ -1,0 +1,54 @@
+/* Admin V20: practical 7-page content manager, layered over the unchanged public design */
+.pnc20-page-hub{overflow:visible!important}
+.pnc20-eyebrow{display:block;font-size:10px;letter-spacing:.16em;font-weight:900;color:#bba5ff;margin-bottom:12px}
+.pnc20-preview-site{white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.pnc20-steps{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 0 22px}
+.pnc20-steps span{font-weight:700;color:#b9b8d4;font-size:12px;display:inline-flex;align-items:center;gap:9px}
+.pnc20-steps b{display:inline-grid;place-items:center;width:28px;height:28px;border:1px solid #c4abff40;border-radius:9px;background:#9876ff22;color:#e9dfff;font-weight:900;font-size:11px}
+.pnc20-page-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.pnc20-page-card{padding:20px;border:1px solid rgba(179,161,255,.2);border-radius:20px;background:linear-gradient(140deg,rgba(42,36,77,.9),rgba(24,27,55,.94));min-width:0;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.pnc20-page-card:hover{transform:translateY(-2px);border-color:rgba(191,172,255,.55);box-shadow:0 16px 38px #07071b42}
+.pnc20-card-head{display:flex;gap:12px;align-items:center}
+.pnc20-card-icon{height:49px;width:49px;flex:0 0 49px;display:grid;place-items:center;color:#fff;font-weight:900;border-radius:15px;background:linear-gradient(145deg,#7968d9,#393f8b);box-shadow:0 10px 24px #22196138}
+.pnc20-card-head h3{font-size:19px;letter-spacing:-.03em;color:#fff;margin:0 0 4px}
+.pnc20-card-head span:not(.pnc20-card-icon){font-size:11px;color:#c6bddb}
+.pnc20-counts{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0;padding:13px 0;border-top:1px solid #ffffff1a;border-bottom:1px solid #ffffff1a}
+.pnc20-counts span{font-size:12px;color:#bfb9d8;display:inline-flex;align-items:center;gap:5px}
+.pnc20-counts b{font-size:14px;color:#f5eefe}
+.pnc20-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pnc20-card-actions button,.pnc20-card-actions a{min-height:39px;border-radius:11px;padding:9px 12px;font:700 12px Inter,Arial,sans-serif;text-align:center;cursor:pointer;text-decoration:none;border:1px solid #b7afff39;color:#efedff;background:#b6a5ff12;transition:background .2s,border-color .2s,transform .2s}
+.pnc20-card-actions button:hover,.pnc20-card-actions a:hover{background:#a68eff24;border-color:#c3baff8a;transform:translateY(-1px)}
+.pnc20-card-actions button:first-child{background:linear-gradient(120deg,#8068df,#5e56c4);color:#fff;border-color:#b1a0ff60}
+.pnc20-card-actions a{grid-column:span 2}
+.pnc20-footnote{margin-top:20px;padding:16px 20px;border:1px solid #b6a5ff22;border-radius:14px;background:#1b1e3a;color:#c5c0d9;font-size:12px;line-height:1.7}
+.pnc20-footnote span{color:#bd99ff;margin-right:8px}
+.pnc20-inline-switcher{display:grid;gap:12px;margin:0 0 24px;padding:16px 18px;border:1px solid rgba(157,143,235,.23);border-radius:18px;background:linear-gradient(120deg,#2e274660,#2227447f)}
+.pnc20-switcher-title{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.pnc20-switcher-title strong{font-weight:900;color:#f7f1ff;font-size:14px}
+.pnc20-switcher-title small{color:#aeadce;font-size:12px}
+.pnc20-page-pills{display:flex;gap:7px;flex-wrap:wrap}
+.pnc20-page-pill{border:1px solid #aaa5ee3b;border-radius:999px;background:#100d2691;color:#d5d2ec;font:700 12px Inter,Arial,sans-serif;padding:10px 14px;cursor:pointer;transition:background .18s,color .18s,border-color .18s}
+.pnc20-page-pill:hover{border-color:#cbb6ff91;color:#fff}
+.pnc20-page-pill.is-selected{background:linear-gradient(100deg,#775dd3,#6356aa);color:#fff;border-color:#b8a5ff85;box-shadow:0 6px 14px #0a092d41}
+.pnc20-search-block{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:20px 0 12px;border:1px solid #af9fef22;border-radius:15px;padding:12px 15px;background:#12162b91}
+.pnc20-search-block label{font-size:12px;font-weight:800;color:#e8e4ff}
+.pnc20-search-block input{flex:1 1 220px;min-width:0;border:1px solid #b4b0d147;border-radius:10px;background:#090d20;color:#fff;padding:11px 13px;font:500 12px Inter,Arial,sans-serif}
+.pnc20-search-block input:focus{outline:2px solid #9a80fb80;outline-offset:1px}
+.pnc20-search-block span{font-size:11px;white-space:nowrap}
+.pnc20-text-section{padding:17px;border:1px solid #b6a5ff2a;border-radius:15px;background:linear-gradient(135deg,#1e1b35,#17192f);margin-bottom:12px}
+.pnc20-text-section-head{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.pnc20-section-label{font-size:11px;font-weight:900;letter-spacing:.055em;color:#dfd4ff}
+.pnc20-changed,.pnc20-original{padding:4px 8px;border-radius:999px;border:1px solid #b3a2ff55;color:#c8b7ff;font-size:10px;font-weight:800}
+.pnc20-changed{color:#b7f1dc;border-color:#79d9b46e;background:#3cba9a1a}
+.pnc20-original-copy{font-size:12px;line-height:1.55;color:#bcb8d2;margin:8px 0 12px}
+.pnc20-text-section label{display:block}
+.pnc20-field-label{display:block;font-size:11px;font-weight:800;color:#e8e1fc;margin:0 0 7px}
+.pnc20-text-section textarea{display:block;width:100%;resize:vertical;min-height:68px;background:#0b0d20!important;color:#fff!important;border:1px solid #a9a3d04d!important;border-radius:12px;padding:12px;font:500 13px/1.6 Inter,Arial,sans-serif}
+.pnc20-text-section textarea:focus{outline:2px solid #a78bfa8c;outline-offset:1px}
+.pnc20-reset-text{border:0;background:transparent;color:#c9b3ff;font:800 11px Inter,Arial,sans-serif;cursor:pointer;margin:12px 0 0;padding:3px}
+.pnc20-reset-text:hover{text-decoration:underline}
+.v5-media-item .pnc20-replace-banner{background:#a88cff1a;border-color:#baa7ff66}
+.pnc20-text-section[hidden],.v5-media-item[hidden]{display:none!important}
+@media(max-width:1160px){.pnc20-page-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.pnc20-page-grid{grid-template-columns:1fr}.pnc20-switcher-title{display:grid;gap:3px}.pnc20-card-actions{grid-template-columns:1fr 1fr}.pnc20-card-actions a{grid-column:span 2}.pnc20-search-block{align-items:stretch}.pnc20-search-block span{white-space:normal}}
+@media(prefers-reduced-motion:reduce){.pnc20-page-card,.pnc20-card-actions button,.pnc20-card-actions a{transition:none!important;transform:none!important}}

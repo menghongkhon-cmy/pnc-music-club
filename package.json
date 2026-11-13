@@ -1,0 +1,13 @@
+{
+  "name": "pnc-music-club-website",
+  "version": "21.0.0",
+  "private": true,
+  "description": "PNC Music Club V21: faster site effects and an admin-managed expandable photo gallery",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

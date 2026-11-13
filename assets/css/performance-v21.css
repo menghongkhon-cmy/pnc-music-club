@@ -1,0 +1,28 @@
+/* V21 — performance-focused polish, preserves existing layout and colors */
+/* Gallery cards are isolated from other layout work and use predecoded images. */
+.gallery-tile-extra{border-radius:16px;contain:layout paint;transition:transform .25s ease,box-shadow .25s ease;}
+.gallery-tile-extra img{object-fit:cover;}
+.gallery-tile-extra .gallery-info strong{font-size:clamp(16px,1.5vw,22px)}
+/* Avoid rendering off-screen sections until visitors scroll toward them. */
+.gallery-tile, .v5-media-item{content-visibility:auto;contain-intrinsic-size:auto 320px;}
+/* The full-page ambient grid already exists: disable duplicate V11 layers. */
+.pnc-v11-ambient{display:none!important;}
+/* Repainting giant blurred gradients on every frame can cause stutter. */
+.ambient-atmosphere .ambient-orb,
+.ambient-atmosphere .ambient-vinyl,
+.ambient-atmosphere .ambient-notes,
+.ambient-atmosphere .ambient-grid{animation-duration:35s!important;}
+.hero::before,.inner-hero::after,.topline::after,.marquee::after{animation:none!important;}
+/* Smoother lightweight interactions, limited to transform and opacity. */
+.gallery-img img{transition:transform .3s ease;transform:translateZ(0);}
+.gallery-tile:hover .gallery-img img{transform:scale(1.035)}
+/* Pause decorative animations in background tabs, preserving slideshow timers on return. */
+html.pnc21-idle .ambient-atmosphere *,html.pnc21-idle .pnc-v11-ambient *,html.pnc21-idle .club-3d-scene *{animation-play-state:paused!important;}
+@media(max-width:760px){
+  .gallery-tile-extra{min-height:240px}
+  .ambient-atmosphere{opacity:.25}
+  .gallery-tile{contain-intrinsic-size:auto 270px}
+}
+@media(prefers-reduced-motion:reduce){
+ .gallery-tile-extra,.gallery-tile-extra *{animation:none!important;transition:none!important;}
+}

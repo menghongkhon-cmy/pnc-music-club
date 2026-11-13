@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /api/
+Disallow: /.private-data/
+
+Sitemap: https://your-pnc-music-club-domain.example/sitemap.xml

@@ -1,0 +1,186 @@
+/* Centered, photo-led homepage hero inspired by the club's requested reference. */
+.hero.hero-pnc {
+  height: clamp(560px, calc(100svh - 117px), 850px) !important;
+  min-height: clamp(560px, calc(100svh - 117px), 850px) !important;
+}
+
+.hero-pnc .hero-shade {
+  background:
+    linear-gradient(180deg, rgba(20, 13, 35, .43), rgba(15, 12, 31, .48) 58%, rgba(9, 8, 24, .68)),
+    linear-gradient(90deg, rgba(20, 13, 35, .18), transparent 55%, rgba(20, 13, 35, .18)) !important;
+}
+
+.hero-pnc .hero-inner {
+  width: min(1280px, calc(100% - 48px));
+  height: 100% !important;
+  min-height: 0 !important;
+  padding: 48px 0 110px !important;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-pnc .hero-main {
+  display: flex;
+  width: 100% !important;
+  max-width: 1240px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hero-pnc .hero-main::before,
+.hero-pnc .hero-side {
+  display: none !important;
+}
+
+.hero-pnc::after {
+  display: none !important;
+}
+
+.hero-pnc .hero-main h1 {
+  max-width: 100% !important;
+  margin: 0 0 34px !important;
+  color: #fff !important;
+  font-size: clamp(56px, 9.5vw, 120px) !important;
+  font-weight: 900 !important;
+  letter-spacing: -.085em !important;
+  line-height: .98 !important;
+  white-space: nowrap;
+  text-shadow: 0 8px 34px rgba(0, 0, 0, .3);
+}
+
+.hero-pnc .hero-main h1 .headline-line {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.hero-pnc .hero-main h1 em,
+.hero-pnc .hero-main h1 .text-outline {
+  color: inherit !important;
+  background: none !important;
+  -webkit-text-fill-color: currentColor !important;
+  -webkit-text-stroke: 0 !important;
+  filter: none !important;
+}
+
+.hero-pnc .hero-main h1 em::before,
+.hero-pnc .hero-main h1 em::after {
+  display: none !important;
+}
+
+.hero-accent-line {
+  display: block;
+  width: 100px;
+  height: 5px;
+  margin: 0 0 26px;
+  border-radius: 999px;
+  background: #27c8e3;
+  box-shadow: 0 0 24px rgba(39, 200, 227, .48);
+}
+
+.hero-pnc .hero-main > p {
+  max-width: 760px !important;
+  margin: 0 0 38px !important;
+  color: #63e3f2 !important;
+  font-size: clamp(18px, 2vw, 28px) !important;
+  font-weight: 500;
+  line-height: 1.5 !important;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, .35);
+}
+
+.hero-pnc .hero-buttons {
+  justify-content: center;
+  gap: 18px;
+}
+
+.hero-pnc .hero-buttons .btn {
+  min-height: 58px;
+  padding: 0 28px;
+  border-radius: 10px !important;
+  font-size: 16px;
+}
+
+.hero-pnc .hero-buttons .btn-primary {
+  border: 1px solid #29cbe6 !important;
+  background: #29cbe6 !important;
+  color: #081b2a !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .2);
+}
+
+.hero-pnc .hero-buttons .btn-primary:hover {
+  background: #5cdef0 !important;
+}
+
+.hero-pnc .hero-buttons .btn-ghost {
+  border: 2px solid #35cde4 !important;
+  background: rgba(5, 15, 30, .72) !important;
+  color: #fff !important;
+}
+
+.hero-pnc .hero-bottom {
+  position: absolute !important;
+  right: auto;
+  bottom: 0;
+  left: 50%;
+  width: min(1280px, calc(100% - 48px));
+  transform: translateX(-50%);
+}
+
+@media (max-width: 760px) {
+  .hero.hero-pnc {
+    height: clamp(560px, calc(100svh - 100px), 780px) !important;
+    min-height: clamp(560px, calc(100svh - 100px), 780px) !important;
+  }
+
+  .hero-pnc .hero-inner {
+    width: calc(100% - 36px);
+    padding: 40px 0 100px !important;
+  }
+
+  .hero-pnc .hero-main h1 {
+    margin-bottom: 22px !important;
+    font-size: clamp(40px, 10vw, 72px) !important;
+    letter-spacing: -.07em !important;
+    white-space: normal;
+  }
+
+  .hero-pnc .hero-main h1 .headline-line {
+    display: block;
+    white-space: normal;
+  }
+
+  .hero-accent-line {
+    width: 76px;
+    height: 4px;
+    margin-bottom: 20px;
+  }
+
+  .hero-pnc .hero-main > p {
+    max-width: 540px !important;
+    margin-bottom: 28px !important;
+    font-size: clamp(17px, 4vw, 22px) !important;
+  }
+
+  .hero-pnc .hero-buttons {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-pnc .hero-buttons .btn {
+    min-height: 52px;
+    padding-inline: 18px;
+    font-size: 14px;
+  }
+
+  .hero-pnc .hero-bottom {
+    width: calc(100% - 36px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-accent-line {
+    box-shadow: none;
+  }
+}

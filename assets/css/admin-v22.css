@@ -1,0 +1,173 @@
+/* Keep the sign-in screen within the viewport while preserving the full admin layout. */
+body.admin-hacker:has(#authCard:not([hidden])) {
+  width: 100%;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+}
+
+body.admin-hacker:has(#authCard:not([hidden])) .admin-header {
+  height: 64px;
+  min-height: 64px;
+  margin: 0 auto;
+  padding: 6px clamp(14px, 3vw, 40px);
+  border-radius: 0;
+}
+
+body.admin-hacker:has(#authCard:not([hidden])) .admin-main {
+  width: min(1380px, calc(100% - 32px));
+  height: calc(100dvh - 64px);
+  min-height: 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+body.admin-hacker #authCard.auth-card {
+  width: min(1080px, 100%);
+  height: min(650px, calc(100dvh - 80px));
+  min-height: 0;
+  margin: 0 auto;
+}
+
+body.admin-hacker #authCard .auth-content {
+  overflow: hidden;
+  padding: clamp(20px, 2.4vw, 36px);
+}
+
+body.admin-hacker #authCard .auth-topline {
+  margin-bottom: 14px;
+}
+
+body.admin-hacker #authCard .admin-mark {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 12px;
+}
+
+body.admin-hacker #authCard .admin-mark img {
+  width: 54px;
+  height: 54px;
+}
+
+body.admin-hacker #authCard .admin-kicker {
+  margin-top: 4px;
+}
+
+body.admin-hacker #authCard #authTitle {
+  margin: 9px 0;
+  font-size: clamp(32px, 3.2vw, 42px);
+}
+
+body.admin-hacker #authCard .admin-form {
+  gap: 12px;
+  margin-top: 18px;
+}
+
+body.admin-hacker #authCard .admin-form input {
+  height: 45px;
+  min-height: 45px;
+}
+
+body.admin-hacker #authCard .admin-form .admin-primary {
+  height: 46px;
+  min-height: 46px;
+  margin-top: 2px;
+}
+
+body.admin-hacker #authCard .auth-foot {
+  margin-top: 14px;
+  padding-top: 12px;
+}
+
+body.admin-hacker #authCard .v15-showcase {
+  min-height: 0;
+  padding: 22px 25px 18px;
+}
+
+body.admin-hacker #authCard .v15-art {
+  width: min(86%, 340px);
+  min-height: 0;
+}
+
+body.admin-hacker #authCard .v15-panel-content h2 {
+  font-size: clamp(28px, 2.7vw, 35px);
+}
+
+@media (max-width: 700px) {
+  body.admin-hacker:has(#authCard:not([hidden])) .admin-header {
+    height: 60px;
+    min-height: 60px;
+  }
+
+  body.admin-hacker:has(#authCard:not([hidden])) .admin-main {
+    width: calc(100% - 24px);
+    height: calc(100dvh - 60px);
+    min-height: 0;
+  }
+
+  body.admin-hacker #authCard.auth-card {
+    width: min(520px, 100%);
+    height: min(620px, calc(100dvh - 72px));
+    min-height: 0;
+    margin: 0 auto;
+  }
+
+  body.admin-hacker #authCard .auth-content {
+    padding: 22px 20px 18px;
+  }
+
+  body.admin-hacker #authCard .v15-showcase {
+    display: none !important;
+  }
+
+  body.admin-hacker #authCard #authTitle {
+    font-size: 34px;
+  }
+}
+
+@media (max-height: 660px) {
+  body.admin-hacker #authCard .auth-content {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  body.admin-hacker #authCard .admin-mark {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+
+  body.admin-hacker #authCard .admin-mark img {
+    width: 42px;
+    height: 42px;
+  }
+
+  body.admin-hacker #authCard .auth-topline {
+    margin-bottom: 9px;
+  }
+
+  body.admin-hacker #authCard .admin-form {
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  body.admin-hacker #authCard .admin-form input {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  body.admin-hacker #authCard .admin-form .admin-primary {
+    height: 42px;
+    min-height: 42px;
+  }
+
+  body.admin-hacker #authCard .auth-foot {
+    margin-top: 9px;
+    padding-top: 8px;
+  }
+
+  body.admin-hacker #authCard .v15-panel-top {
+    font-size: 8px;
+  }
+}

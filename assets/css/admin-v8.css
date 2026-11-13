@@ -1,0 +1,206 @@
+/* PNC V8 background studio / management workspace */
+.pnc-bg-manager { padding:clamp(18px,2.2vw,30px); margin-bottom:21px; border:1px solid #af9dff53; background:radial-gradient(ellipse at 94% 0%,#7c52dc2c,transparent 55%),linear-gradient(130deg,#252746,#171a31); }
+.pnc-bg-manager .v5-title { margin-bottom:24px; }
+.pnc-bg-manager .v5-title h3 { display:flex;align-items:center;flex-wrap:wrap;gap:10px; }
+.pnc-new-label{padding:5px 9px;border-radius:999px;background:#8de1cd21;color:#a9f1dc;border:1px solid #b4ffe73d;font-size:9px;letter-spacing:.12em;vertical-align:middle}
+.pnc-bg-editor-grid { display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,3vw,36px);align-items:start; }
+.pnc-bg-fields { display:flex;flex-direction:column;gap:15px;min-width:0; }
+.pnc-bg-fields>label { display:flex;flex-direction:column;gap:9px;color:#eeebff;font-size:12px;font-weight:750; }
+.pnc-bg-fields select { border:1px solid #b9aaff3d;background:#0b1025;color:#fff;padding:12px 14px;min-height:46px;border-radius:11px;font:inherit; }
+.pnc-bg-fields select option { background:#151933; }
+.pnc-bg-fields input[type="range"] { accent-color:#c3a2ff;cursor:pointer; }
+.pnc-bg-fields label output { float:right;color:#ddc7ff;font-variant-numeric:tabular-nums; }
+.pnc-bg-help { padding:15px 16px;background:#10172c;border:1px solid #ffffff16;border-radius:13px;color:#c3c0d8;font-size:11px;line-height:1.7; }
+.pnc-bg-help b { color:#ecc0ff; }
+.pnc-bg-actions { display:flex;gap:10px;flex-wrap:wrap; }
+.pnc-bg-actions button { min-height:43px;padding:12px 17px;border-radius:10px;font-size:12px; }
+.pnc-bg-fields small{line-height:1.6;font-size:11px;color:#a9aac7}
+#cmsBgStatus{min-height:18px;margin:0;color:#a4efce;font-size:12px;line-height:1.5}
+.pnc-bg-preview-wrap{min-width:0}
+.pnc-bg-preview{position:relative;aspect-ratio:16/9;min-height:220px;overflow:hidden;border-radius:20px;border:1px solid #c8bfff3c;background:radial-gradient(circle at 20% 30%,#594ebd7a,transparent 40%),radial-gradient(circle at 80% 85%,#cc619866,transparent 52%),#0b1030;display:grid;place-items:center}
+.pnc-bg-preview-element{position:absolute;inset:0;height:100%;width:100%;object-fit:cover;object-position:center}
+.pnc-bg-preview-overlay{position:absolute;inset:0;pointer-events:none}
+.pnc-bg-preview-title{position:absolute;bottom:20px;left:24px;color:#fff;font-size:clamp(18px,2vw,31px);font-weight:900;line-height:1;letter-spacing:-.055em;pointer-events:none;text-shadow:0 7px 25px #090b1caa;max-width:80%}
+.pnc-bg-empty{display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center;color:#ddd5ff;padding:22px}.pnc-bg-empty span{font-size:51px;color:#bc96ff}.pnc-bg-empty b{font-size:17px}.pnc-bg-empty small{font-size:12px;color:#aeacc9}
+.pnc-bg-preview-caption{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;font-weight:800;letter-spacing:.1em;padding:13px 3px;color:#d2c8ee}
+.pnc-bg-preview-caption span:last-child{font-weight:500;font-size:11px;color:#b8b4d5;letter-spacing:0;text-align:right}
+@media(max-width:900px){.pnc-bg-editor-grid{grid-template-columns:1fr}.pnc-bg-preview{min-height:200px}}
+@media(max-width:520px){.pnc-bg-actions button{flex:1}.pnc-bg-preview-caption{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){.pnc-bg-empty span{animation:none!important}}
+
+
+/* V10 hacker login redesign */
+.admin-hacker {
+  background:
+    radial-gradient(circle at 18% 20%, rgba(0,255,170,.12), transparent 30%),
+    radial-gradient(circle at 82% 10%, rgba(94,255,240,.08), transparent 26%),
+    radial-gradient(circle at 80% 80%, rgba(150,93,255,.12), transparent 30%),
+    linear-gradient(135deg, #03060d 0%, #07111c 46%, #0e0a1d 100%);
+  overflow-x: hidden;
+}
+.admin-hacker .studio-backdrop {
+  isolation: isolate;
+}
+.admin-hacker .studio-grid {
+  background-image:
+    linear-gradient(rgba(0,255,179,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,179,.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity: .45;
+  mask-image: linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent);
+}
+.hacker-noise,
+.hacker-pulse,
+.hacker-rain { position:absolute; inset:0; pointer-events:none; }
+.hacker-noise {
+  opacity: .08;
+  background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,.6) 0 1px, transparent 2px), radial-gradient(circle at 70% 60%, rgba(255,255,255,.55) 0 1px, transparent 2px);
+  background-size: 20px 20px, 24px 24px;
+  mix-blend-mode: screen;
+  animation: hackerNoiseMove 12s linear infinite;
+}
+.hacker-pulse {
+  background: radial-gradient(circle at 50% 50%, rgba(0,255,170,.12), transparent 42%);
+  filter: blur(30px);
+  animation: hackerPulse 7s ease-in-out infinite;
+}
+.hacker-rain {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  overflow: hidden;
+  opacity: .52;
+}
+.hacker-rain span {
+  display: block;
+  width: 24px;
+  color: rgba(117,255,214,.55);
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  white-space: pre;
+  text-shadow: 0 0 8px rgba(74,255,191,.32);
+  animation: matrixFall linear infinite;
+  transform: translateY(-120%);
+}
+.auth-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(117, 255, 217, .14);
+  background:
+    linear-gradient(135deg, rgba(7,20,31,.82), rgba(12,12,32,.88) 55%, rgba(22,10,35,.9)),
+    rgba(4, 9, 17, .82);
+  box-shadow: 0 30px 90px rgba(0,0,0,.5), 0 0 0 1px rgba(130,255,230,.06) inset, 0 0 40px rgba(60,255,190,.08);
+}
+.auth-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(125deg, rgba(0,255,170,.07), transparent 32%, transparent 68%, rgba(155,95,255,.08));
+  pointer-events:none;
+}
+.auth-content, .auth-showcase { position:relative; z-index:1; }
+.auth-content {
+  animation: adminFadeUp .85s ease both;
+}
+.auth-showcase {
+  border-left: 1px solid rgba(114,255,220,.12);
+  background: linear-gradient(160deg, rgba(6,18,26,.44), rgba(15,13,37,.2));
+}
+.hacker-showcase::before {
+  content:"010101\A PNC MUSIC CLUB\A ACCESS GRANTED";
+  white-space: pre;
+  position:absolute;
+  top:20px; right:20px;
+  font-size:11px;
+  line-height:1.8;
+  letter-spacing:.18em;
+  color:rgba(134,255,223,.48);
+  text-align:right;
+}
+.auth-topline {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom: 18px;
+}
+.auth-chip {
+  display:inline-flex;
+  align-items:center;
+  min-height:30px;
+  padding:7px 12px;
+  border-radius:999px;
+  background: rgba(85,255,198,.12);
+  border:1px solid rgba(85,255,198,.22);
+  color:#b8ffe8;
+  font-size:11px;
+  letter-spacing:.18em;
+  font-weight:800;
+}
+.auth-chip.ghost {
+  background: rgba(154,116,255,.09);
+  border-color: rgba(154,116,255,.19);
+  color:#dccbff;
+}
+.admin-mark {
+  width: 88px;
+  height: 88px;
+  display:grid;
+  place-items:center;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(124,87,255,.92), rgba(79,39,199,.95));
+  box-shadow: 0 18px 50px rgba(109,71,255,.35), 0 0 0 1px rgba(255,255,255,.12) inset;
+}
+.admin-mark img { width: 62px; height: 62px; object-fit: contain; }
+#authTitle {
+  text-shadow: 0 0 18px rgba(106,255,214,.09);
+}
+#authDescription {
+  max-width: 46ch;
+}
+.admin-form label {
+  color: #daf7ed;
+}
+.admin-form input {
+  border-color: rgba(110,255,217,.22);
+  background: rgba(5, 14, 22, .82);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.02);
+  transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+.admin-form input::placeholder { color: rgba(219,240,234,.48); }
+.admin-form input:focus {
+  border-color: rgba(94,255,220,.65);
+  box-shadow: 0 0 0 4px rgba(71,255,194,.11), 0 0 24px rgba(71,255,194,.16);
+  transform: translateY(-1px);
+}
+.admin-primary {
+  background: linear-gradient(90deg, #23d9a8, #6d7dff 55%, #9a63ff);
+  box-shadow: 0 16px 42px rgba(80,113,255,.28);
+}
+.admin-primary:hover { filter: brightness(1.06); transform: translateY(-1px); }
+.admin-alert {
+  color: #ff9db5;
+  min-height: 20px;
+}
+.auth-foot { color:#b9d8cf; }
+.secure-dot { background:#6dffd1; box-shadow:0 0 0 6px rgba(95,255,211,.12); }
+.small-pill {
+  background: rgba(95,255,211,.1);
+  border-color: rgba(95,255,211,.2);
+  color:#b8ffe7;
+}
+.wave-bars i {
+  background: linear-gradient(180deg, rgba(114,255,222,.86), rgba(138,104,255,.52));
+}
+@keyframes matrixFall { from { transform: translateY(-120%); } to { transform: translateY(115%); } }
+@keyframes hackerNoiseMove { from { transform: translate3d(0,0,0); } to { transform: translate3d(-24px, -18px, 0); } }
+@keyframes hackerPulse { 0%,100% { opacity:.45; transform: scale(.95); } 50% { opacity:.9; transform: scale(1.05); } }
+@keyframes adminFadeUp { from { opacity:0; transform: translateY(18px); } to { opacity:1; transform: translateY(0); } }
+@media (max-width: 980px) {
+  .hacker-rain { opacity: .32; }
+  .auth-card { background: linear-gradient(160deg, rgba(8,18,28,.95), rgba(16,12,34,.95)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hacker-noise, .hacker-pulse, .hacker-rain span, .auth-content { animation: none !important; }
+}

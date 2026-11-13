@@ -1,0 +1,12 @@
+/* V13: photo-led banner fallback for PNC Music Club. */
+.hero:not(.pnc-hero-custom-media):not(.pnc-hero-shared-page) .hero-slides,
+.inner-hero:not(.pnc-hero-custom-media):not(.pnc-hero-shared-page) .hero-slides{filter:saturate(1.08) contrast(1.03)}
+.hero:not(.pnc-hero-custom-media):not(.pnc-hero-shared-page) .hero-shade{
+  background:linear-gradient(90deg,rgba(8,7,25,.86) 0%,rgba(8,7,25,.66) 35%,rgba(8,7,25,.19) 76%,rgba(8,7,25,.10) 100%),linear-gradient(0deg,rgba(7,7,25,.33),transparent 48%);
+}
+.inner-hero:not(.pnc-hero-custom-media):not(.pnc-hero-shared-page) .inner-banner-shade{
+  background:linear-gradient(90deg,rgba(8,7,25,.85),rgba(8,7,25,.48) 56%,rgba(8,7,25,.16)),linear-gradient(0deg,rgba(7,7,25,.31),transparent 55%);
+}
+.hero-main h1,.inner-hero-copy h1{text-wrap:balance}
+/* Keep logo, controls and text readable over group photography. */
+.hero-main p,.inner-hero-copy p{text-shadow:0 2px 12px rgba(5,5,20,.32)}

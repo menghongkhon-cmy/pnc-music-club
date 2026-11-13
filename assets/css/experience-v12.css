@@ -1,0 +1,27 @@
+
+/* V12 GLOBAL BACKGROUND: one shared wallpaper across all seven public pages. */
+body.pnc-has-page-background > .pnc-page-media-stage{z-index:0;}
+body.pnc-has-page-background .pnc-v11-ambient{z-index:0;opacity:.42;}
+body.pnc-has-page-background .pnc-hero-shared-page{background:transparent!important;}
+body.pnc-has-page-background .pnc-hero-shared-page .hero-slides{visibility:hidden!important;}
+body.pnc-has-page-background .pnc-hero-shared-page .slide-controls,
+body.pnc-has-page-background .pnc-hero-shared-page .inner-banner-controls,
+body.pnc-has-page-background .pnc-hero-shared-page .scroll-note{display:none!important;}
+body.pnc-has-page-background .pnc-hero-shared-page .hero-bottom{height:20px;min-height:20px;}
+body.pnc-has-page-background .pnc-hero-shared-page .inner-banner-shade{background:linear-gradient(90deg,rgba(6,8,22,.72),rgba(6,8,22,.38) 76%,rgba(6,8,22,.20)),linear-gradient(0deg,rgba(6,8,22,.45),transparent 55%)!important;}
+body.pnc-has-page-background .pnc-hero-shared-page .hero-shade{background:linear-gradient(90deg,rgba(6,8,22,.81),rgba(6,8,22,.38) 73%,rgba(6,8,22,.20)),linear-gradient(0deg,rgba(6,8,22,.48),transparent 50%)!important;}
+body.pnc-has-page-background .pnc-hero-shared-page .hero-inner,body.pnc-has-page-background .pnc-hero-shared-page .inner-hero-grid{position:relative;z-index:8!important;}
+/* Tint sections rather than making them fully opaque, so the selected image/GIF/video remains visible. */
+body.pnc-shared-background main .section,
+body.pnc-shared-background main .section-alt,
+body.pnc-shared-background main .team-section,
+body.pnc-shared-background main .statement-section,
+body.pnc-shared-background main .school-section,
+body.pnc-shared-background main .big-cta{background:rgba(12,13,31,.47)!important;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);}
+body.pnc-shared-background main .section-alt,
+body.pnc-shared-background main .school-section{background:rgba(17,15,40,.58)!important;}
+body.pnc-shared-background main .section:before,
+body.pnc-shared-background main .section:after{pointer-events:none;}
+body.pnc-shared-background[data-theme="light"] main .section,
+body.pnc-shared-background[data-theme="light"] main .section-alt{background:rgba(244,241,250,.82)!important;}
+@media(max-width:700px){body.pnc-shared-background main .section{backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}}

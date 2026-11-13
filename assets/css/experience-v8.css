@@ -1,0 +1,65 @@
+/* V8 / PNC MUSIC CLUB — Banner redesign and per-page image / GIF / video backgrounds */
+:root { --pnc-glass:rgba(12,16,34,.55); --pnc-peach:#ffc7a0; --pnc-lilac:#e3c3ff; }
+.hero { display:flex; flex-direction:column; position:relative; isolation:isolate; width:100%; height:auto; min-height:clamp(660px,88svh,860px); background:#10152a; overflow:hidden; }
+.hero .hero-slides { z-index:1; }
+.hero .hero-slide { background-size:cover; }
+.hero .hero-shade { z-index:5; pointer-events:none; background:linear-gradient(90deg,rgba(5,11,29,.80) 0%,rgba(8,12,34,.65) 40%,rgba(8,11,29,.20) 100%),linear-gradient(0deg,rgba(6,9,23,.52),transparent 55%); }
+.hero:after { z-index:5!important; }
+.hero .hero-inner { position:relative; z-index:8!important; display:flex; align-items:center; flex:1 1 auto; width:100%; padding:56px clamp(18px,3vw,52px) 62px; min-height:0; height:auto; }
+.hero .hero-main { width:100%; max-width:none; padding:0; margin:0; border:none; border-radius:0; background:transparent; box-shadow:none; backdrop-filter:none; -webkit-backdrop-filter:none; }
+.hero .hero-kicker { margin-bottom:21px; font-family:Inter,system-ui,sans-serif; font-size:10px; letter-spacing:.17em; color:#f3d9ff; font-weight:800; }
+.hero .hero-kicker .kicker-star { color:#ffbf9a; }
+.hero .hero-kicker .kicker-line { width:30px; background:linear-gradient(90deg,#ffba96,#cba6ff); }
+.hero h1 { width:100%; max-width:100%; margin:0 0 22px; font-family:Inter,system-ui,sans-serif; font-size:clamp(47px,4.85vw,74px); font-weight:900; line-height:1.02; letter-spacing:-.067em; text-wrap:initial; overflow-wrap:normal; word-break:normal; color:#fffaf6; text-shadow:0 7px 30px rgba(0,0,0,.17); }
+.hero h1 .headline-line { display:block; overflow:visible; max-width:100%; }
+.hero h1 .headline-line:not(:last-child) { margin-bottom:.075em; }
+.hero h1 .text-outline { -webkit-text-stroke:1.25px #efe2ff; color:transparent; }
+.hero h1 em { font-family:Inter,system-ui,sans-serif; font-style:normal; font-weight:850; font-size:.95em; background:linear-gradient(105deg,#e9b7ff,#ffbd9d); -webkit-background-clip:text; background-clip:text; color:transparent; letter-spacing:-.055em; }
+.hero .hero-main>p { max-width:565px; margin:0 0 28px; color:#e7e6f2; line-height:1.8; font-size:clamp(13px,1.2vw,15px); text-shadow:none; }
+.hero .hero-buttons { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+.hero .hero-buttons .btn { border-radius:12px; padding:15px 21px; min-height:52px; font-size:12px; letter-spacing:0; }
+.hero .hero-buttons .btn-primary { background:linear-gradient(125deg,#ffbc94,#ffd2b6); color:#291729; box-shadow:0 10px 28px #ffad8440; }
+.hero .hero-buttons .btn-ghost { color:#fff; border-color:rgba(255,255,255,.36); background:rgba(255,255,255,.09); }
+.hero .hero-side { display:none; }
+.hero .hero-bottom { position:relative; z-index:9!important; width:100%; min-height:68px; height:auto; flex:none; border-top:1px solid rgba(255,255,255,.17); padding:10px max(32px,calc((100% - 1240px)/2)); background:rgba(7,11,30,.56); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); }
+.hero .slide-controls { min-height:42px; gap:12px; }
+.hero .slide-prev,.hero .slide-next { display:grid; place-items:center; width:36px; height:36px; padding:0; border:1px solid rgba(255,255,255,.25); border-radius:50%; background:rgba(255,255,255,.07); }
+.hero .slide-progress { max-width:none; flex-wrap:nowrap; }
+.hero .slide-progress .progress-seg { width:31px; }
+.hero .slide-caption { margin-left:14px; font-size:9px; letter-spacing:.13em; color:#d7d5f0; }
+.hero .scroll-note { color:#eee9ff; }
+.marquee { position:relative; z-index:3; padding:13px 0; background:linear-gradient(92deg,#34244e,#42295b,#2e254d); color:#ffcfb5; border-top:1px solid #f0bcff29; border-bottom:1px solid #f0bcff20; }
+.marquee-inner { font-size:12px; letter-spacing:.14em; }
+.marquee-inner span { color:#e6b4ff; }
+/* Hero media goes above the slideshow but below both gradient and text. */
+.pnc-hero-media-stage { position:absolute; inset:0; z-index:4; overflow:hidden; pointer-events:none; }
+.pnc-hero-media-element { display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
+.pnc-hero-custom-media .hero-slides { visibility:hidden; }
+.pnc-hero-custom-media .inner-banner-controls, .pnc-hero-custom-media .slide-progress, .pnc-hero-custom-media .slide-prev, .pnc-hero-custom-media .slide-next, .pnc-hero-custom-media .slide-caption, .pnc-hero-custom-media .scroll-note { display:none!important; }
+.pnc-hero-custom-media .hero-bottom { min-height:20px; height:20px; }
+/* Inner page banners: same clean, readable treatment. */
+.inner-hero { position:relative; isolation:isolate; min-height:440px; }
+.inner-hero .pnc-hero-media-stage { z-index:4; }
+.inner-hero .inner-banner-shade { z-index:5; background:linear-gradient(90deg,rgba(7,10,31,.88),rgba(13,13,40,.61) 60%,rgba(8,10,30,.25)),linear-gradient(0deg,rgba(7,9,27,.35),transparent 55%); }
+.inner-hero .inner-hero-grid { position:relative; z-index:8!important; min-height:440px; }
+.inner-hero .inner-hero-copy { padding-top:65px; padding-bottom:82px; }
+.inner-hero h1 { font-size:clamp(42px,5.4vw,78px); line-height:1.06; text-wrap:balance; }
+/* Body background can be set per page; use an anchored full-viewport stage behind translucent content. */
+html:has(body.pnc-has-page-background) { background:#080c1c; }
+body.pnc-has-page-background { isolation:isolate; background:transparent!important; }
+.pnc-page-media-stage { position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+.pnc-page-media-element { width:100%; height:100%; display:block; object-fit:cover; }
+.pnc-page-media-veil { position:absolute; inset:0; }
+body.pnc-has-page-background .ambient-atmosphere { opacity:.22; }
+body.pnc-has-page-background main { background:transparent; }
+body.pnc-has-page-background > main,body.pnc-has-page-background > .footer,body.pnc-has-page-background > .topline { position:relative;z-index:1; }
+body.pnc-has-page-background > .site-header { position:sticky;z-index:50; }
+body.pnc-has-page-background main .section, body.pnc-has-page-background main .section-alt,body.pnc-has-page-background main .team-section { background:rgba(13,13,30,.69)!important; backdrop-filter:blur(7px); }
+body.pnc-has-page-background main .section-alt { background:rgba(22,18,42,.78)!important; }
+body.pnc-has-page-background .footer { background:rgba(9,9,27,.92); }
+body.pnc-has-page-background[data-theme="light"] main .section { background:rgba(247,244,251,.88)!important; }
+body.pnc-has-page-background[data-theme="light"] main .section-alt { background:rgba(249,244,252,.92)!important; }
+@media(max-width:1050px){ .hero .hero-inner{width:calc(100% - 48px)} .hero h1{font-size:clamp(48px,6.7vw,75px)} .hero .hero-main{width:min(720px,85%)} .hero .hero-bottom{padding-inline:24px} }
+@media(max-width:720px){ .hero{min-height:660px} .hero .hero-inner{width:calc(100% - 30px);padding:42px 0 36px;align-items:center} .hero .hero-main{width:100%;padding:26px 21px;border-radius:0;background:transparent;box-shadow:none;border:none} .hero .hero-kicker{font-size:9px;gap:7px;letter-spacing:.11em;margin-bottom:15px} .hero h1{font-size:clamp(31px,7.6vw,55px);line-height:1.05;letter-spacing:-.06em;margin-bottom:18px} .hero .hero-main>p{font-size:13px;line-height:1.65;margin-bottom:22px} .hero .hero-buttons .btn{padding:12px 14px;min-height:47px;font-size:11px;gap:9px} .hero .hero-bottom{min-height:62px;padding:9px 16px} .hero .slide-caption{display:none} .hero .slide-progress .progress-seg{width:24px} .hero .slide-controls{gap:7px} .hero .scroll-note{display:none} .marquee{padding:11px 0}.marquee-inner{font-size:10px} .inner-hero .inner-hero-grid{min-height:370px}.inner-hero h1{font-size:clamp(40px,8.8vw,64px)} }
+@media(max-width:390px){.hero h1{font-size:clamp(29px,8vw,39px)}.hero .hero-buttons .btn{font-size:10px;padding:11px 12px}}
+@media(prefers-reduced-motion:reduce){.hero h1 .headline-line,.hero .hero-kicker,.hero .hero-main>p,.hero .hero-buttons{animation:none!important;opacity:1!important;transform:none!important;filter:none!important;clip-path:none!important}.pnc-hero-media-element,.pnc-page-media-element{transition:none!important} }
